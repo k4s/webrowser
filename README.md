@@ -17,7 +17,7 @@ func main() {
 		Method:       "GET",
 		Url:          "http://weibo.com/kasli/home?wvr=5",
 		Header:       http.Header{"Cookie": []string{"your cookie"}},
-		UsePhontomJS: true,
+		UsePhantomJS: true,
 	}
 	brower := NewWebrowse()
 	resp, err := brower.Download(p)

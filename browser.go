@@ -51,7 +51,7 @@ type WebrowseParam struct {
 func (self *Webrowse) Download(req Request) (resp *http.Response, err error) {
 
 	//是否执行PhontomJS下载器
-	if req.GetusePhomtomJS() {
+	if req.GetusePhantomJS() {
 		phantombrowse := phantomgo.NewPhantom()
 		return phantombrowse.Download(req)
 	} else {
